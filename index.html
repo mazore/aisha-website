@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AISHA — AI Strengthening Healthcare Access</title>
-<meta name="description" content="AISHA is an offline, Krio-speaking voice assistant device putting trustworthy medical knowledge in the hands of healthcare workers in low-resource settings, piloted in Sierra Leone.">
+<title>AISHA | AI Strengthening Healthcare Access</title>
+<meta name="description" content="AISHA is an offline voice assistant that answers clinical questions in Krio for healthcare workers in rural Sierra Leone.">
+<link rel="icon" href="assets/logo.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="nav">
   <div class="wrap">
-    <a href="#top" class="nav-brand"><img src="assets/logo.png" alt="AISHA logo"> AISHA</a>
+    <a href="#top" class="nav-brand"><img src="assets/logo.png" alt="AISHA"></a>
     <div class="nav-links">
-      <a href="#problem">Problem</a>
-      <a href="#solution">Solution</a>
+      <a href="#how">How it works</a>
       <a href="#impact">Impact</a>
-      <a href="#publication">Publication</a>
+      <a href="#research">Research</a>
       <a href="#team">Team</a>
       <a href="#contact">Contact</a>
     </div>
@@ -26,205 +26,262 @@
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <div class="eyebrow">Lehigh University · Global Social Impact Fellowship</div>
-      <h1>A talking textbook for healthcare workers with no internet, no power, and no time to lose.</h1>
-      <p class="lede">AISHA is an offline, battery-powered voice assistant that answers clinical questions in Krio — built for health workers in low-resource clinics across Sierra Leone.</p>
-      <div class="cta-row">
-        <a href="#publication" class="btn btn-primary">Read the publication</a>
-        <a href="#impact" class="btn btn-secondary">See pilot results</a>
-      </div>
+      <div class="eyebrow">Offline clinical voice assistant</div>
+      <h1>A talking textbook for healthcare workers.</h1>
+      <p class="lede">AISHA answers clinical questions out loud, in Krio, from a medical library stored entirely on the device. It needs no internet and no grid power, and it is built with health workers in rural Sierra Leone.</p>
     </div>
-    <div class="hero-image">
-      <img src="assets/device-hero.png" alt="The AISHA device, a white cylindrical voice assistant with the AISHA logo">
+    <div class="hero-media">
+      <img src="assets/device-hero.png" alt="The AISHA device, a white cylindrical speaker with the AISHA logo on the front">
     </div>
   </div>
 </header>
 
-<section id="problem">
+<section class="alt" id="about">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">The Problem</div>
-      <h2>Medical knowledge doesn't reach the workers who need it most</h2>
-      <p>Sierra Leone has a fraction of the healthcare workforce of high-income countries, and many frontline workers practice with limited formal training and no reliable way to check clinical guidance in the moment.</p>
-    </div>
-    <div class="two-col">
+    <div class="about-grid">
       <div>
-        <div class="stat-card">
-          <span class="num">26×</span>
-          <span class="cap">fewer healthcare workers per capita than high-income countries</span>
+        <div class="section-head">
+          <div class="eyebrow">The setting</div>
+          <h2>Built for clinics the internet never reached</h2>
+          <p>Most frontline care in Sierra Leone happens at small rural facilities. Clinical guidelines exist for nearly every case these health workers see, but they are written in English, scattered across binders and PDFs, and hard to search in the middle of a shift. AISHA puts that guidance one spoken question away.</p>
         </div>
-        <div class="stat-card">
-          <span class="num">82%</span>
-          <span class="cap">of clinics in the region have no internet access</span>
+        <div class="stat-row">
+          <div class="stat">
+            <span class="num">27&times;</span>
+            <span class="cap">fewer health workers per capita than in high income countries</span>
+          </div>
+          <div class="stat">
+            <span class="num">82%</span>
+            <span class="cap">of health facilities have no institutionally provided internet<a class="src" href="https://doi.org/10.2196/30040" target="_blank" rel="noopener" title="Chukwu et al., Electricity, Computing Hardware, and Internet Infrastructures in Health Facilities in Sierra Leone: Field Mapping Study. JMIR Medical Informatics, 2022.">1</a></span>
+          </div>
         </div>
       </div>
-      <div>
-        <ul class="feature-list">
-          <li><strong>Language gap.</strong> Official medical guidelines are written in English, but health workers and patients communicate more naturally in Krio.</li>
-          <li><strong>Connectivity gap.</strong> Cloud-based tools like smart speakers or chatbots simply don't work where most clinics operate — offline, off-grid, and far from reliable power.</li>
-          <li><strong>Information gap.</strong> Without a working reference on hand, healthcare workers fall back on memory and training that may be years out of date.</li>
-        </ul>
+      <figure class="about-photo">
+        <img src="assets/phu-device-1.jpg" alt="A health worker at a desk in a rural clinic with an AISHA device beside her paperwork">
+        <figcaption>AISHA in daily use at a rural health post outside Makeni.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How it works</div>
+      <h2>Every answer comes from a real document</h2>
+      <p>AISHA is a retrieval system. It matches each question against a curated library of clinical references stored on the device and reads back the relevant guidance. Nothing is improvised and nothing leaves the room.</p>
+    </div>
+
+    <div class="diagram" role="img" aria-label="Diagram of how AISHA works: a question asked in Krio is transcribed, matched against the on-device medical library, and the answer is read back aloud, all without leaving the device.">
+      <div class="dg-flow">
+        <div class="dg-node">
+          <div class="dg-chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M19 11a7 7 0 0 1-14 0"/><line x1="12" y1="18" x2="12" y2="21"/></svg>
+          </div>
+          <p>A clinical question, asked in Krio</p>
+        </div>
+
+        <div class="dg-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </div>
+
+        <div class="dg-device">
+          <span class="dg-tag">Runs entirely on the device</span>
+          <div class="dg-steps">
+            <div class="dg-step">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <strong>Listen</strong>
+              <span>Krio speech recognition, trained on our own dataset</span>
+            </div>
+            <div class="dg-mini-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="18" y2="12"/><polyline points="13 7 18 12 13 17"/></svg>
+            </div>
+            <div class="dg-step">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+              <strong>Retrieve</strong>
+              <span>Finds the matching passage in the on-device library</span>
+            </div>
+            <div class="dg-mini-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="18" y2="12"/><polyline points="13 7 18 12 13 17"/></svg>
+            </div>
+            <div class="dg-step">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a9 9 0 0 1 0 14"/></svg>
+              <strong>Speak</strong>
+              <span>Reads the guidance back in Krio</span>
+            </div>
+          </div>
+          <div class="dg-kb">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <div>
+              <strong>On-device medical library</strong>
+              <span>Guidelines and standard operating procedures adapted with the Ministry of Health and partner facilities</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dg-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </div>
+
+        <div class="dg-node">
+          <div class="dg-chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a9 9 0 0 1 0 14"/></svg>
+          </div>
+          <p>The guidance, read aloud</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Works off the grid</h3>
+        <p>A full day on its internal battery and zero reliance on connectivity. AISHA works the same in a regional hospital and a village health post.</p>
+      </div>
+      <div class="feature">
+        <h3>Speaks Krio</h3>
+        <p>English guidelines, Krio conversations. AISHA bridges the two with speech models trained on Krio recorded across Sierra Leone.</p>
+      </div>
+      <div class="feature">
+        <h3>Grounded in local guidance</h3>
+        <p>The library is assembled with the Ministry of Health and partner facilities, adapting their protocols and standard operating procedures into a form that can be searched by voice.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="alt" id="solution">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">The Solution</div>
-      <h2>A device that works where the internet doesn't</h2>
-      <p>AISHA is a local information-retrieval system, not a cloud-based generative chatbot — it answers from a preloaded, fact-checked knowledge base, which keeps it working offline and reduces the risk of hallucinated medical advice.</p>
-    </div>
-    <div class="two-col">
-      <div>
-        <ul class="feature-list">
-          <li><strong>Fully offline.</strong> Runs entirely on-device — no internet or cell connection required, anywhere in the clinic.</li>
-          <li><strong>Speaks Krio.</strong> A custom-trained voice model built from the ground up on collected Krio speech data, so the interface matches how health workers actually talk.</li>
-          <li><strong>Grounded answers.</strong> Draws on guidelines, protocols, and materials from global health organizations, hospitals, and ministries of health — not open-ended generation.</li>
-          <li><strong>Built for the clinic.</strong> Rechargeable battery, durable enclosure, and a louder speaker added after direct feedback from the field.</li>
-          <li><strong>Two modes.</strong> Instant answers on demand, like a spoken encyclopedia, or guided learning modules for practicing clinical decision-making.</li>
-        </ul>
-      </div>
-      <div class="hero-image">
-        <img src="assets/phu-device-1.jpg" alt="A nurse reviewing paperwork with an AISHA device on the desk at a peripheral health unit">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="impact">
+<section class="alt" id="impact">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Impact</div>
-      <h2>From prototype to pilot, in real clinics</h2>
-      <p>AISHA has been piloted across clinics and Peripheral Health Units in Makeni, Sierra Leone, in partnership with Sierra Leone's Ministry of Health and Sanitation and local hospital staff.</p>
+      <h2>Piloting in Makeni</h2>
+      <p>Eight AISHA devices have been running in hospitals and Peripheral Health Units around Makeni since August 2025, in partnership with Sierra Leone&rsquo;s Ministry of Health and Sanitation.</p>
     </div>
 
     <div class="impact-grid">
       <figure>
-        <img src="assets/phu-device-2.jpg" alt="Healthcare workers and family members at a peripheral health unit with an AISHA device on the table">
-        <figcaption>A pilot site visit at a Peripheral Health Unit outside Makeni</figcaption>
+        <img src="assets/phu-device-2.jpg" alt="Health workers and patients around a table at a rural clinic with an AISHA device in the middle">
+        <figcaption>A rural pilot site. Staff at this Peripheral Health Unit keep AISHA at hand to check guidance during the day.</figcaption>
       </figure>
       <figure>
-        <img src="assets/ebk-presentation.jpeg" alt="AISHA team member presenting the device to a room of nursing students">
-        <figcaption>Demoing AISHA to nursing students at Ernest Bai Koroma University</figcaption>
+        <img src="assets/ebk-presentation.jpeg" alt="A speaker presenting the AISHA device to a full hall of nursing students">
+        <figcaption>Introducing the device to nursing students in Makeni.</figcaption>
       </figure>
       <figure>
-        <img src="assets/ministry-meeting.jpg" alt="AISHA team with representatives from Sierra Leone's Ministry of Health">
-        <figcaption>Meeting with Sierra Leone's Ministry of Health and Sanitation</figcaption>
+        <img src="assets/ministry-meeting.jpg" alt="The AISHA team standing with officials from the Ministry of Health and Sanitation">
+        <figcaption>With the Ministry of Health and Sanitation.</figcaption>
       </figure>
     </div>
 
-    <div class="pilot-stats">
-      <div class="stat-card"><span class="num">8</span><span class="cap">clinics piloted</span></div>
-      <div class="stat-card"><span class="num">400+</span><span class="cap">participants in Krio voice data collection</span></div>
-      <div class="stat-card"><span class="num">70 hrs</span><span class="cap">of Krio speech collected, 35% human-reviewed via our WhatsApp platform</span></div>
-      <div class="stat-card"><span class="num">10</span><span class="cap">healthcare workers in pre/post clinical evaluation</span></div>
+    <div class="impact-sub">
+      <h3>Clinical evaluation</h3>
+      <p>In November 2025 we ran a pre/post evaluation with ten healthcare workers at pilot sites. Each worked through realistic patient scenarios before and after a short AISHA learning module. Errors fell 35 percent on average, and 80 percent for recognition of hyperosmolar hyperglycemic state, a dangerous diabetic emergency that few had been formally trained on. It is an early result from a small group, and the evaluation continues as more devices go out.</p>
+      <div class="stat-row-3">
+        <div class="stat">
+          <span class="num">8</span>
+          <span class="cap">pilot sites around Makeni</span>
+        </div>
+        <div class="stat">
+          <span class="num">35%</span>
+          <span class="cap">fewer clinical errors on average after using AISHA</span>
+        </div>
+        <div class="stat">
+          <span class="num">80%</span>
+          <span class="cap">fewer errors recognizing HHS, a serious diabetic emergency</span>
+        </div>
+      </div>
+      <div class="charts">
+        <div class="chart">
+          <img src="assets/chart-diabetic.png" alt="Bar chart of clinical errors in recognition of diabetic emergencies for ten participants, before and after AISHA">
+        </div>
+        <div class="chart">
+          <img src="assets/chart-hhs.png" alt="Bar chart of clinical errors in recognition of HHS for ten participants, before and after AISHA">
+        </div>
+      </div>
+      <p class="charts-note">Errors per participant on scenario tests, before and after using AISHA. November 2025, n = 10.</p>
     </div>
 
-    <p>Pilot evaluation used pre/post paper tests with healthcare workers, walking through realistic patient scenarios — including diabetic emergencies and hyperosmolar hyperglycemic state (HHS) diagnosis — before and after a short AISHA learning module.</p>
-
-    <div class="charts-grid">
-      <div class="chart-card">
-        <img src="assets/chart-diabetic.png" alt="Bar chart showing clinical errors in recognition of diabetic emergencies before and after AISHA, dropping from an average of 9.4 to 6 errors per participant">
-      </div>
-      <div class="chart-card">
-        <img src="assets/chart-hhs.png" alt="Bar chart showing clinical errors in recognition of HHS before and after AISHA, dropping from an average of 2.9 to 0.8 errors per participant">
+    <div class="impact-sub">
+      <h3>Krio speech data</h3>
+      <p>Krio has almost no public speech data, so we are building the dataset ourselves. Contributors across Sierra Leone record phrases through a WhatsApp platform we built, and native speakers review the transcriptions for accuracy. This data trains the recognition models that let AISHA understand questions the way people actually ask them.</p>
+      <div class="stat-row-3">
+        <div class="stat">
+          <span class="num">400+</span>
+          <span class="cap">contributors across Sierra Leone</span>
+        </div>
+        <div class="stat">
+          <span class="num">70 hrs</span>
+          <span class="cap">of recorded Krio speech</span>
+        </div>
+        <div class="stat">
+          <span class="num">35%</span>
+          <span class="cap">human reviewed through our WhatsApp platform</span>
+        </div>
       </div>
     </div>
-
-    <p class="caveat">These are results from an early-stage pilot evaluation — realistic clinical scenarios assessed on paper, not a large-scale clinical trial measuring real patient outcomes. We're continuing to expand and formalize this evaluation as AISHA scales.</p>
   </div>
 </section>
 
-<section class="alt" id="publication">
+<section id="research">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Publication</div>
+      <div class="eyebrow">Research</div>
       <h2>Peer-reviewed and presented</h2>
     </div>
     <div class="pub-card">
       <div class="pub-icon">DOI</div>
       <div>
         <h3>Designing an AI-Powered Voice Assistant Device for Healthcare Workers in Low-Resource Settings</h3>
-        <p class="pub-meta">Evan Mazor, Kudakwashe Mundove, MD, et al. · Design of Medical Devices Conference (DMD), University of Minnesota, 2026</p>
-        <a href="https://doi.org/10.1115/DMD2026-1051" target="_blank" rel="noopener">doi.org/10.1115/DMD2026-1051 →</a>
-        <ul class="pub-honors">
-          <li>3rd place, Lehigh University Undergraduate Research Symposium</li>
-        </ul>
+        <p class="pub-meta">E. Mazor, K. Mundove, et al. Design of Medical Devices Conference, University of Minnesota, 2026.</p>
+        <a href="https://doi.org/10.1115/DMD2026-1051" target="_blank" rel="noopener">doi.org/10.1115/DMD2026-1051</a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="team">
+<section class="alt" id="team">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Team</div>
-      <h2>Built by students, guided by the field</h2>
-      <p>AISHA is a project of Lehigh University's Creative Inquiry Global Social Impact Fellowship, developed by an interdisciplinary team of student engineers alongside partners on the ground in Sierra Leone.</p>
+      <h2>Students and clinicians, working together</h2>
+      <p>AISHA is developed by an interdisciplinary student team at Lehigh University working alongside clinicians and partners in Sierra Leone.</p>
     </div>
-
-    <div class="team-block">
-      <h3>Project Lead</h3>
-      <div class="team-names">
-        <span class="lead">Evan Mazor</span>
-      </div>
-    </div>
-
-    <div class="team-block">
-      <h3>Team</h3>
-      <div class="team-names">
-        <span>Maisy Earl</span>
-        <span>Malayna Leopold</span>
-        <span>Henry Knight</span>
-        <span>Maximilian Nussbaum</span>
-        <span>Olivia Bellinzoni</span>
-        <span>Nora Kerrigan</span>
-        <span>Kemith Perera</span>
-        <span>Kudakwashe Mundove, MD</span>
-        <span>John Brereton</span>
-        <span>Vrushti Patel</span>
-      </div>
-    </div>
-
-    <div class="team-block">
-      <h3>Faculty Advisors</h3>
-      <div class="team-names">
-        <span>Eric Obeysekare</span>
-        <span>Khanjan Mehta</span>
-      </div>
-    </div>
-
-    <div class="hero-image" style="margin-top: 32px;">
-      <img src="assets/team-devices.jpeg" alt="The AISHA team posing with a stack of AISHA devices">
-    </div>
+    <figure class="team-photo">
+      <img src="assets/team-devices.jpeg" alt="Seven AISHA team members holding assembled AISHA devices">
+    </figure>
+    <ul class="team-list">
+      <li><strong>Evan Mazor</strong><span>Team Member, Computer Science and Engineering &rsquo;26</span></li>
+      <li><strong>Maisy Earl</strong><span>Team Member, Computer Science and Engineering &rsquo;27</span></li>
+      <li><strong>Malayna Leopold</strong><span>Team Member, Psychology and Biology &rsquo;26</span></li>
+      <li><strong>Henry Knight</strong><span>Team Member, Mechanical Engineering &rsquo;28</span></li>
+      <li><strong>Maximilian Nussbaum</strong><span>Team Member, Computer Science and Engineering &rsquo;27</span></li>
+      <li><strong>Olivia Bellinzoni</strong><span>Team Member, Computer Science and Business &rsquo;28</span></li>
+      <li><strong>Nora Kerrigan</strong><span>Team Member, Integrated Business and Population Health &rsquo;29</span></li>
+      <li><strong>Kemith Perera</strong><span>Team Member, Computer Science and Engineering &rsquo;28</span></li>
+      <li><strong>Kudakwashe Mundove, MD</strong><span>Team Member, Masters of Health Systems Technology</span></li>
+      <li><strong>Khanjan Mehta</strong><span>Faculty Advisor, Vice Provost for Creative Inquiry</span></li>
+      <li><strong>Eric Obeysekare</strong><span>Faculty Advisor, Teaching Assistant Professor</span></li>
+    </ul>
   </div>
 </section>
 
-<section class="alt">
+<section id="partners">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Partners</div>
       <h2>On the ground in Sierra Leone</h2>
     </div>
-    <div class="partners-list">
-      <div>
-        <strong>Sierra Leone Ministry of Health and Sanitation</strong>
-        <span>National partnership supporting adoption of digital health tools</span>
+    <div class="partners">
+      <div class="partner">
+        <strong>Ministry of Health and Sanitation, Sierra Leone</strong>
+        <span>National partner guiding adoption and scale across the health system</span>
       </div>
-      <div>
+      <div class="partner">
         <strong>World Hope International</strong>
-        <span>Local implementation and pilot site coordination</span>
+        <span>Implementation partner supporting operations in Makeni</span>
       </div>
-      <div>
-        <strong>Makeni Regional Teaching Hospital &amp; Holy Spirit Hospital</strong>
-        <span>Pilot deployment sites</span>
-      </div>
-      <div>
-        <strong>Ernest Bai Koroma University of Science &amp; Technology / International College of Makeni</strong>
-        <span>Student and clinical staff engagement</span>
+      <div class="partner">
+        <strong>Makeni Regional Teaching Hospital</strong>
+        <span>Clinical partner and pilot site</span>
       </div>
     </div>
   </div>
@@ -233,16 +290,17 @@
 <section id="contact">
   <div class="wrap">
     <div class="contact-box">
-      <h2>Get involved</h2>
-      <p>Interested in partnering, joining the team, or learning more about AISHA? We'd love to hear from you.</p>
-      <a href="mailto:ero324@lehigh.edu" class="btn btn-primary">ero324@lehigh.edu</a>
+      <h2>Contact Us</h2>
+      <p>For partnerships, pilots, research collaborations, or anything else, write to us.</p>
+      <a href="mailto:ero324@lehigh.edu" class="btn">ero324@lehigh.edu</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    AISHA — AI Strengthening Healthcare Access · Lehigh University Creative Inquiry Global Social Impact Fellowship
+    AISHA &middot; AI Strengthening Healthcare Access<br>
+    A project of Lehigh University&rsquo;s Creative Inquiry program.
   </div>
 </footer>
 
