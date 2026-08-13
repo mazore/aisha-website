@@ -54,7 +54,7 @@ section[id] { scroll-margin-top: 72px; }
   margin-bottom: 12px;
 }
 
-.section-head { max-width: 660px; margin: 0 0 40px; }
+.section-head { max-width: 800px; margin: 0 0 40px; }
 .section-head h2 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 14px; }
 .section-head p { color: var(--ink-soft); margin: 0; }
 
@@ -150,9 +150,9 @@ section.alt { background: var(--paper-alt); }
 .stat .cap { color: var(--ink-soft); font-size: 0.92rem; line-height: 1.45; }
 
 .src {
-  font-size: 0.68rem;
-  vertical-align: super;
-  margin-left: 3px;
+  display: inline-block;
+  font-size: 0.72rem;
+  margin-left: 4px;
   color: var(--ink-soft);
   text-decoration: none;
   border-bottom: 1px dotted var(--ink-soft);
@@ -356,6 +356,7 @@ section.alt { background: var(--paper-alt); }
 .pub-card h3 { margin: 0 0 6px; font-size: 1.15rem; line-height: 1.35; }
 .pub-meta { color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 10px; }
 .pub-card a { font-size: 0.92rem; }
+.pub-card + .pub-card { margin-top: 16px; }
 
 /* ---------- Team ---------- */
 
@@ -392,6 +393,20 @@ section.alt { background: var(--paper-alt); }
 }
 .partner strong { display: block; margin-bottom: 4px; font-size: 0.97rem; }
 .partner span { color: var(--ink-soft); font-size: 0.87rem; line-height: 1.45; }
+.partner-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
 
 /* ---------- Contact ---------- */
 
@@ -402,7 +417,7 @@ section.alt { background: var(--paper-alt); }
   border-radius: 16px;
 }
 .contact-box h2 { color: #fff; margin: 0 0 12px; font-size: 1.8rem; }
-.contact-box p { color: #c8ccd3; max-width: 50ch; margin: 0 auto 28px; }
+.contact-box .contact-lede { color: #c8ccd3; max-width: 34ch; margin: 0 auto 28px; }
 .btn {
   display: inline-block;
   padding: 13px 26px;
