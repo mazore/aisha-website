@@ -63,6 +63,7 @@ img { max-width: 100%; display: block; }
 .nav-brand img { height: 34px; width: auto; }
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 26px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -73,6 +74,13 @@ img { max-width: 100%; display: block; }
   transition: color 120ms ease;
 }
 .nav-links a:hover { color: var(--accent-deep); }
+.nav-social {
+  display: flex;
+  align-items: center;
+  color: var(--ink-soft);
+}
+.nav-social svg { width: 19px; height: 19px; display: block; }
+.nav-social:hover { color: var(--accent); }
 
 /* ---------- HERO ---------- */
 .hero {
@@ -105,6 +113,21 @@ img { max-width: 100%; display: block; }
   margin: 0;
   max-width: 48ch;
 }
+.video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  font-weight: 650;
+  font-size: 0.95rem;
+  color: var(--accent-deep);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 120ms ease;
+}
+.video-link svg { width: 22px; height: 22px; color: var(--accent); }
+.video-link:hover { border-bottom-color: var(--accent); }
+
 .hero-media { display: flex; justify-content: center; }
 .hero-media img {
   max-height: 400px;
@@ -429,6 +452,25 @@ a.src:hover { color: var(--accent); text-decoration: underline; }
 .btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: transparent;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+.btn-ghost svg { width: 18px; height: 18px; }
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.55), 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* ---------- FOOTER ---------- */
